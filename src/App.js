@@ -4,7 +4,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_API_URL || 'http://localhost:8000')
+    fetch(process.env.REACT_APP_API_URL || 'http://localhost:8000/api/products')
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error('Error fetching products:', error));
