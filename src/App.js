@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 console.log('Environment Variables:', process.env);
 const PRODUCTS_API_HOST =
-  process.env.REACT_APP_PRODUCTS_API_HOST || '192.168.204.132';
+  process.env.REACT_APP_PRODUCTS_API_HOST || 'localhost';
 const PRODUCTS_API_PORT = process.env.REACT_APP_PRODUCTS_API_PORT || '8000';
 
 const url = `http://${PRODUCTS_API_HOST}:${PRODUCTS_API_PORT}/api/products`;
