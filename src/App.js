@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+console.log('Environment Variables:', process.env);
 const PRODUCTS_API_HOST =
   process.env.REACT_APP_PRODUCTS_API_HOST || '192.168.204.132';
 const PRODUCTS_API_PORT = process.env.REACT_APP_PRODUCTS_API_PORT || '8000';
