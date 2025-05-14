@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 
-const PRODUCTS_API_HOST = process.env.PRODUCTS_API_HOST || '192.168.204.132';
-const PRODUCTS_API_PORT = process.env.PRODUCTS_API_PORT || '8000';
+const PRODUCTS_API_HOST =
+  process.env.REACT_APP_PRODUCTS_API_HOST || '192.168.204.132';
+const PRODUCTS_API_PORT = process.env.REACT_APP_PRODUCTS_API_PORT || '8000';
 
 const url = `http://${PRODUCTS_API_HOST}:${PRODUCTS_API_PORT}/api/products`;
 
